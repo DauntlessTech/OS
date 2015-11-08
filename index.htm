@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BROWSE</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/c0afb87987/OS1/style.css">
+  </head>
+  <body>
+    <header class="bar bar-header text-center">
+      <div class="databox grid-2-3 text-left">
+        <div class="icon-box">
+          <span class="icon-medium icon text-large icon-display"></span>
+        </div>
+        <div class="icon-box">
+          <span class="icon-medium icon text-large icon-folder"></span>
+        </div>
+        <div class="icon-box">
+          <span class="icon-medium icon text-large icon-feed"></span>
+        </div>
+        <div class="icon-box">
+          <span class="icon-medium icon text-large icon-tv"></span>
+        </div>
+      </div>
+      <div id="clockbox" class="databox grid-1-3 text-right">
+      </div>
+    </header>
+
+    <main class="databox desktop">
+      <section class="app-move-scale video-player hidden">
+        <article class="frame-container">
+          <div class="app-title-bar">
+            <span class="float-right icon icon-cross"></span>
+            <small class="text-header">
+              OS FEED
+            </small>
+          </div>
+          <iframe class="vid" width="100%"; src="http://www.bing.com"></iframe>
+        </article>
+      </section>
+      <section class="databox start-menu hidden">
+
+        <article class="bar-menu">
+          <span class="icon-medium float-right icon text-large icon-user"></span>
+          <form method="get" action="/search" id="search">
+            <input name="q" class="search-bar" type="text" size="100" placeholder="Search..." />
+          </form>
+        </article>
+
+        <article class="bar-content">
+          <p class="app-btn grid-1-10">
+            <span class="icon icon-feed"></span>
+          </p>
+          <p class="app-btn grid-1-10">
+            <span class="icon icon-tv"></span>
+          </p>
+          <p class="app-btn grid-1-10">
+            <span class="icon icon-file-text"></span>
+          </p>
+          <p class="app-btn grid-1-10">
+            <span class="icon icon-bin"></span>
+          </p>
+          <p class="app-btn grid-1-10">
+            <span class="icon icon-folder"></span>
+          </p>
+        </article>
+
+
+
+      </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="js/app-move-scale.js"></script>
+    <script src="js/time.js"></script>
+  </body>
+</html>
