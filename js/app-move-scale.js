@@ -6,7 +6,6 @@ var video = $('.icon-feed');
 var minus = $('.icon-cross');
 var desk = $('.desktop');
 
-
 function init(){
   start.click(function(){
     startMenu.fadeToggle(200);
@@ -43,14 +42,23 @@ function ctrl(key, callback, args) {
   });
 };
 
+function doNav(obj) {
+  var url = obj.value;
+
+  var text = $('.url').val();
+  // document.domain = text;
+  $('#browserTable').attr('src', 'http://' + text);
+}
+
+
 $(function(){
 
   init();
-  $('.vid').css({
+  $('.os-frame').css({
     'height': apps.height()
   });
   apps.resize(function(){
-    $('.vid').css({
+    $('.os-frame').css({
       'height': apps.height()
     });
   });

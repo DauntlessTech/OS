@@ -46,7 +46,7 @@ main{
 }
 .app-title-bar{
   color: #000;
-  height: 30px;
+  height: auto;
   width: 100%;
   background-color: #1bb6ee;
 }
@@ -194,13 +194,27 @@ main{
 }
 
 /* APPLICATIONS GO HERE */
-.video-player{
-  top: 50px;
-  left: 300px;
+/* OS FEED */
+.os-address{
+  height: 100%;
+  padding-top: 10px;
+  width: 100%
+  margin: auto;
+}
+.os-address input{
+  padding: 10px;
+  margin: 0;
+}
+.url{
+  width: 100%;
+}
+.os-feed{
+  top: 10px;
+  left: 10px;
   color: #fff;
   overflow: hidden;
 }
-.vid{
+.os-frame{
     overflow: auto;
 }
 /*------------------ ID's ------------------*/
@@ -210,11 +224,6 @@ main{
   color: #fff;
   margin: auto;
 }
-
-search {
-
-}
-
 
 #search input[type="text"] {
     background: url(search-white.png) no-repeat 10px 6px #444;
